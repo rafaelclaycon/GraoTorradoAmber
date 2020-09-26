@@ -11,6 +11,7 @@
 		D9C1F9B9251F5F330037E577 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1F9B8251F5F330037E577 /* ContentView.swift */; };
 		D9C1F9BB251F5F340037E577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C1F9BA251F5F340037E577 /* Assets.xcassets */; };
 		D9C1F9BE251F5F340037E577 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C1F9BD251F5F340037E577 /* Preview Assets.xcassets */; };
+		D9C1F9C7251F6B780037E577 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1F9C6251F6B780037E577 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		D9C1F9BA251F5F340037E577 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D9C1F9BD251F5F340037E577 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D9C1F9BF251F5F340037E577 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9C1F9C6251F6B780037E577 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				D9C1F9B6251F5F330037E577 /* GraoTorradoAmberApp.swift */,
 				D9C1F9B8251F5F330037E577 /* ContentView.swift */,
+				D9C1F9C6251F6B780037E577 /* CardView.swift */,
 				D9C1F9BA251F5F340037E577 /* Assets.xcassets */,
 				D9C1F9BF251F5F340037E577 /* Info.plist */,
 				D9C1F9BC251F5F340037E577 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C1F9B9251F5F330037E577 /* ContentView.swift in Sources */,
+				D9C1F9C7251F6B780037E577 /* CardView.swift in Sources */,
 				D9C1F9B7251F5F330037E577 /* GraoTorradoAmberApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,8 +9,12 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ScrollView(.horizontal) {
+            HStack(spacing: 20) {
+                CardView()
+                    .frame(width: 500, height: 500, alignment: .center)
+            }
+        }
     }
 }
 

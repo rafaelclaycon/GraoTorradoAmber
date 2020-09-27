@@ -8,27 +8,34 @@
 import SwiftUI
 
 struct CardView: View {
+    @State var nomeCafe: String
+    @State var marca: String
+    @State var nomeImagem: String
+    @State var tamanho: Int
+    
     var body: some View {
         ZStack(alignment: .leading) {
-            Image("PrimeiroCafe")
+            Image(nomeImagem)
                 .resizable()
+                //.aspectRatio(contentMode: .fill)
             
             LinearGradient(gradient: Gradient(colors: [.clear, Color.black.opacity(0.5)]), startPoint: .top, endPoint: .bottom)
             
             VStack(alignment: .leading) {
                 Spacer()
-                Text("STARBUCKS")
+                Text(marca)
                     .foregroundColor(.white)
                     .font(.headline)
                     .bold()
-                    //.opacity(0.9)
-                Text("House Blend")
+                Text(nomeCafe)
                     .foregroundColor(.white)
                     .font(.largeTitle)
                     .bold()
             }
             .padding()
         }
+        .frame(width: CGFloat(tamanho), height: CGFloat(tamanho), alignment: .center)
+        //.clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
         .cornerRadius(30)
         .padding()
     }
@@ -36,6 +43,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: 500)
     }
 }

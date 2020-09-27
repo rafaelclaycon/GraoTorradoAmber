@@ -11,7 +11,7 @@ import SwiftUI
 struct GraoTorradoAmberApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
         }
     }
 }

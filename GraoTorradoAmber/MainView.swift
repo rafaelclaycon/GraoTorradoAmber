@@ -10,7 +10,6 @@ import SwiftUI
 struct MainView: View {
     let firstRowSize = 370
     let secondRowSize = 220
-    let espacamentoEntreCards: CGFloat = 0
     
     var body: some View {
         TabView {
@@ -23,12 +22,15 @@ struct MainView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     VStack(alignment: .leading) {
-                        HStack(spacing: espacamentoEntreCards) {
+                        HStack {
+                            Button(action: {}, label: {
+                                Text("Button")
+                            })
                             CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: firstRowSize)
                             CardView(nomeCafe: "Pike Place Roast", marca: "STARBUCKS", nomeImagem: "SegundoCafe", tamanho: firstRowSize)
                             CardView(nomeCafe: "Caffè Verona", marca: "STARBUCKS", nomeImagem: "TerceiroCafe", tamanho: firstRowSize)
                         }
-                        HStack(spacing: espacamentoEntreCards) {
+                        HStack {
                             CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: secondRowSize)
                         }
                     }

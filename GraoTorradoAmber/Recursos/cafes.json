@@ -1,0 +1,26 @@
+[
+    {
+        "id": "25ED2AB1-4DBA-4164-9B0F-EBCD71807796",
+        "nome": "Pike Place Roast",
+        "marca": "Starbucks",
+        "nomeImagem": "PrimeiroCafe"
+    },
+    {
+        "id": "CF84E5E1-DA27-46E7-8C08-27080CDF8556",
+        "nome": "House Blend",
+        "marca": "Starbucks",
+        "nomeImagem": "SegundoCafe"
+    },
+    {
+        "id": "C8DCFE87-E7AB-4ADE-B1EF-7494B330A37A",
+        "nome": "Caffè Verona",
+        "marca": "Starbucks",
+        "nomeImagem": "TerceiroCafe"
+    },
+    {
+        "id": "9FD96051-6A38-410D-8208-4F0D49BADEAF",
+        "nome": "Tradicional",
+        "marca": "Melitta",
+        "nomeImagem": "QuartoCafe"
+    }
+]

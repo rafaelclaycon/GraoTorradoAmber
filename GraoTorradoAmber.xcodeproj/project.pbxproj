@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D9080D6C2520F3E900A31C8E /* CardButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9080D6B2520F3E900A31C8E /* CardButtonStyle.swift */; };
+		D9080D702521049300A31C8E /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9080D6F2521049300A31C8E /* Dados.swift */; };
+		D9080D74252106F200A31C8E /* MainViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9080D73252106F200A31C8E /* MainViewViewModel.swift */; };
+		D9080D772521355900A31C8E /* cafes.json in Resources */ = {isa = PBXBuildFile; fileRef = D9080D762521355900A31C8E /* cafes.json */; };
 		D9C1F9B7251F5F330037E577 /* GraoTorradoAmberApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1F9B6251F5F330037E577 /* GraoTorradoAmberApp.swift */; };
 		D9C1F9B9251F5F330037E577 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9C1F9B8251F5F330037E577 /* MainView.swift */; };
 		D9C1F9BB251F5F340037E577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9C1F9BA251F5F340037E577 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		D9080D6B2520F3E900A31C8E /* CardButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButtonStyle.swift; sourceTree = "<group>"; };
+		D9080D6F2521049300A31C8E /* Dados.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dados.swift; sourceTree = "<group>"; };
+		D9080D73252106F200A31C8E /* MainViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewViewModel.swift; sourceTree = "<group>"; };
+		D9080D762521355900A31C8E /* cafes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = cafes.json; sourceTree = "<group>"; };
 		D9C1F9B3251F5F330037E577 /* GraoTorradoAmber.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GraoTorradoAmber.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9C1F9B6251F5F330037E577 /* GraoTorradoAmberApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraoTorradoAmberApp.swift; sourceTree = "<group>"; };
 		D9C1F9B8251F5F330037E577 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -39,6 +45,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D9080D6E252103B000A31C8E /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				D9080D762521355900A31C8E /* cafes.json */,
+			);
+			path = Recursos;
+			sourceTree = "<group>";
+		};
 		D9C1F9AA251F5F330037E577 = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +72,11 @@
 		D9C1F9B5251F5F330037E577 /* GraoTorradoAmber */ = {
 			isa = PBXGroup;
 			children = (
+				D9080D6E252103B000A31C8E /* Recursos */,
 				D9C1F9C9251F7D210037E577 /* Modelo */,
 				D9C1F9B6251F5F330037E577 /* GraoTorradoAmberApp.swift */,
 				D9C1F9B8251F5F330037E577 /* MainView.swift */,
+				D9080D73252106F200A31C8E /* MainViewViewModel.swift */,
 				D9080D6B2520F3E900A31C8E /* CardButtonStyle.swift */,
 				D9C1F9C6251F6B780037E577 /* CardView.swift */,
 				D9C1F9BA251F5F340037E577 /* Assets.xcassets */,
@@ -82,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				D9C1F9CA251F7D2C0037E577 /* Cafe.swift */,
+				D9080D6F2521049300A31C8E /* Dados.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -145,6 +162,7 @@
 			files = (
 				D9C1F9BE251F5F340037E577 /* Preview Assets.xcassets in Resources */,
 				D9C1F9BB251F5F340037E577 /* Assets.xcassets in Resources */,
+				D9080D772521355900A31C8E /* cafes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +174,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9C1F9CB251F7D2C0037E577 /* Cafe.swift in Sources */,
+				D9080D702521049300A31C8E /* Dados.swift in Sources */,
+				D9080D74252106F200A31C8E /* MainViewViewModel.swift in Sources */,
 				D9C1F9B9251F5F330037E577 /* MainView.swift in Sources */,
 				D9C1F9C7251F6B780037E577 /* CardView.swift in Sources */,
 				D9080D6C2520F3E900A31C8E /* CardButtonStyle.swift in Sources */,

@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Cafe {
-    var id: Int
+struct Cafe: Codable, Identifiable {
+    var id: String
     var nome: String
     var marca: String
     var nomeImagem: String

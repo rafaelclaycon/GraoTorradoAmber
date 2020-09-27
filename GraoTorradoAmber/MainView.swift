@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct MainView: View {
+    @ObservedObject var viewModel = MainViewViewModel(cafes: cafes)
+    
     let firstRowSize = 370
     let secondRowSize = 220
     
@@ -22,7 +24,7 @@ struct MainView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     VStack(alignment: .leading) {
-                        HStack(spacing: 25) {
+                        HStack(spacing: 0) {
                             Button(action: {
                                 
                             }) {

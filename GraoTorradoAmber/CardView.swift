@@ -36,8 +36,8 @@ struct CardView: View {
         }
         .frame(width: CGFloat(tamanho), height: CGFloat(tamanho), alignment: .center)
         //.clipShape(RoundedRectangle(cornerSize: CGSize(width: 30, height: 30)))
-        .cornerRadius(30)
-        .padding()
+        .cornerRadius(25)
+        //.padding()
     }
 }
 

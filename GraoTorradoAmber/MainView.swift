@@ -22,22 +22,44 @@ struct MainView: View {
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     VStack(alignment: .leading) {
-                        HStack {
-                            Button(action: {}, label: {
-                                Text("Button")
-                            })
-                            CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: firstRowSize)
-                            CardView(nomeCafe: "Pike Place Roast", marca: "STARBUCKS", nomeImagem: "SegundoCafe", tamanho: firstRowSize)
-                            CardView(nomeCafe: "Caffè Verona", marca: "STARBUCKS", nomeImagem: "TerceiroCafe", tamanho: firstRowSize)
+                        HStack(spacing: 25) {
+                            Button(action: {
+                                
+                            }) {
+                                CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: firstRowSize)
+                            }
+                            .buttonStyle(CardStyle())
+                            
+                            Button(action: {
+                                
+                            }) {
+                                CardView(nomeCafe: "Pike Place Roast", marca: "STARBUCKS", nomeImagem: "SegundoCafe", tamanho: firstRowSize)
+                            }
+                            .buttonStyle(CardStyle())
+                            
+                            Button(action: {
+                                
+                            }) {
+                                CardView(nomeCafe: "Caffè Verona", marca: "STARBUCKS", nomeImagem: "TerceiroCafe", tamanho: firstRowSize)
+                            }
+                            .buttonStyle(CardStyle())
                         }
+                        .padding(.bottom, 10)
+                        
                         HStack {
-                            CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: secondRowSize)
+                            Button(action: {
+                                
+                            }) {
+                                CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: secondRowSize)
+                            }
                         }
                     }
                 }
+                .padding(.leading, 20)
+                .padding(.bottom, 10)
             }
             .tabItem {
-                Image(systemName: "heart")
+                Image(systemName: "heart.fill")
                 Text("Cafés")
             }
         }

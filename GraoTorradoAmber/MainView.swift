@@ -8,17 +8,35 @@
 import SwiftUI
 
 struct MainView: View {
+    let firstRowSize = 370
+    let secondRowSize = 220
+    let espacamentoEntreCards: CGFloat = 0
+    
     var body: some View {
-        ScrollView(.horizontal, showsIndicators: false) {
+        TabView {
             VStack(alignment: .leading) {
-                HStack(spacing: 20) {
-                    CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: 500)
-                    CardView(nomeCafe: "Pike Place Roast", marca: "STARBUCKS", nomeImagem: "SegundoCafe", tamanho: 500)
-                    CardView(nomeCafe: "Caffè Verona", marca: "STARBUCKS", nomeImagem: "TerceiroCafe", tamanho: 500)
+                Text("Cafés  ☕️")
+                    .font(.largeTitle)
+                    .bold()
+                    .padding(.leading, 20)
+                    .padding(.top, 20)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    VStack(alignment: .leading) {
+                        HStack(spacing: espacamentoEntreCards) {
+                            CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: firstRowSize)
+                            CardView(nomeCafe: "Pike Place Roast", marca: "STARBUCKS", nomeImagem: "SegundoCafe", tamanho: firstRowSize)
+                            CardView(nomeCafe: "Caffè Verona", marca: "STARBUCKS", nomeImagem: "TerceiroCafe", tamanho: firstRowSize)
+                        }
+                        HStack(spacing: espacamentoEntreCards) {
+                            CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: secondRowSize)
+                        }
+                    }
                 }
-                HStack(spacing: 20) {
-                    CardView(nomeCafe: "House Blend", marca: "STARBUCKS", nomeImagem: "PrimeiroCafe", tamanho: 100)
-                }
+            }
+            .tabItem {
+                Image(systemName: "heart")
+                Text("Cafés")
             }
         }
     }
